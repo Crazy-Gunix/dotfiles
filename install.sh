@@ -3,10 +3,12 @@
 # This is a simple setup script to download all of the dotfiles, and their dependencies.
 # If you haven't noticed, this script only works on Arch Linux, and any other distrobutions based off of it(etc. Manjaro,Arco).
 
+# YOU MUST RUN THIS AS ROOT, OR WITH THE SUDO/DOAS COMMAND.
+
 # Setup zsh,kitty and i3.
-sudo pacman -Sy
-sudo pacman -S --noconfirm kitty i3-gaps i3status rofi zsh # Make sure they are installed!
-sudo pacman -S --noconfirm zsh-theme-powerlevel10k zsh-syntax-highlighting zsh-history-substring-search zsh-autosuggestions # Zsh Themes/Plugins
+pacman -Sy
+pacman -S --noconfirm kitty i3-gaps i3status rofi zsh # Make sure they are installed!
+pacman -S --noconfirm zsh-theme-powerlevel10k zsh-syntax-highlighting zsh-history-substring-search zsh-autosuggestions # Zsh Themes/Plugins.
 # Create .config folders if they don't exist yet.
 mkdir -p "~/.config/i3/"
 mkdir -p "~/.config/kitty/"
@@ -24,7 +26,7 @@ curl "https://github.com/Crazy-Gunix/dotfiles/raw/main/Pictures/Icons/icon-manja
 curl "https://github.com/Crazy-Gunix/dotfiles/raw/main/Pictures/Icons/icon-arch.png" > "~/Pictures/Icons/icon-arch.png"
 
 # Time for fonts!
-sudo pacman -S --noconfirm ttf-font-awesome # Install a font that adds icons.
+pacman -S --noconfirm ttf-font-awesome # Install a font that adds icons.
 # Download the rest of the fonts.
 mkdir -p "~/.fonts/"
 # These 4 fonts are for powerlevel10k.
