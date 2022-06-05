@@ -1,7 +1,8 @@
 #!/bin/bash
 
 TMPBG=/tmp/screen.png
-ICON=/home/crazyg/Pictures/Icons/icon.png
+#ICON=/home/crazyg/Pictures/Icons/icon-manjaro.png
+ICON=/home/crazyg/Pictures/Icons/icon-arch.png
 
 scrot $TMPBG
 convert $TMPBG -scale 10% -scale 1000% $TMPBG
