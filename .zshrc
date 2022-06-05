@@ -1,3 +1,5 @@
+# Config file can also be found at https://pastebin.com/raw/ajy1ts8C
+
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
