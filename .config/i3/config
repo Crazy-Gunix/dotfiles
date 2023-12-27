@@ -244,8 +244,10 @@ bar {
 	}
 }
 
-bindsym $mod+Shift+x exec /home/crazyg/.config/i3/lock
+bindsym $mod+Shift+x exec $HOME/.config/i3/lock
 
-exec_always feh --bg-scale /home/crazyg/Pictures/wallpaper.png
+exec_always feh --bg-scale $HOME/Pictures/wallpaper.png
 
 bindsym $mod+d exec rofi -show run
+
+exec --no-startup-id "picom --config $HOME/.config/picom/picom.conf -b"
